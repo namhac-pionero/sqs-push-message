@@ -4,7 +4,7 @@ import logging
 from sqs_sender import SQSMessageSender
 from datetime import datetime
 from dotenv import load_dotenv
-
+import os
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
