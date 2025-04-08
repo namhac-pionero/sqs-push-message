@@ -82,8 +82,6 @@ class WebScraperQueue:
             tuple: (success_count, total_count)
         """
         items = self.scrape_crawl_list(url)
-        total = self.calculate_average_volume(items)
-        print(total)
         if not items:
             logger.error("No items found to queue")
             return (0, 0)
